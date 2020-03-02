@@ -9,4 +9,8 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+@storeX = Store.find_by(id: 6)
+
+test = Store.create(name: "Ne")
+
+puts test.errors.inspect
